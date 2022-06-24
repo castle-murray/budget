@@ -71,19 +71,3 @@ def get_monthly_total():
         total = total + item
     return total
 
-rent = bill("rent", 1, 1189.00)
-storage = bill("storage", 1, 80.00)
-water = bill("water", 1, 80.00)
-power = bill("power", 25, 135.00)
-
-
-snfvg = debt("Sean NFCU green", 10, 160.00, 7936.28, 16.9)
-snfvb = debt("Sean NFCU blue", 14, 104.00, 5200.00, 13.24)
-lnfmc = debt("Lauries NFCU MasterCard", 5, 279.00, 15032.92, 11.24)
-lnfvb = debt("Lauries NFCU Visa", 5, 113.00, 5941.90, 11.24)
-#snfvg.pay_extra(50)
-#snfvg.payoff_time()
-lnfmc.pay_extra(300)
-lnfmc.payoff_time()
-
-print(get_monthly_total())

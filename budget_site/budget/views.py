@@ -10,4 +10,4 @@ def home(request):
 
 
 def about(request):
-    return render(request, 'budget/about.html', {'title': 'About'})uu
+    return render(request, 'budget/about.html', {'title': 'About'})
